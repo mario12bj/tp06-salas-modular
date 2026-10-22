@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= titulo %></title>
+  <link rel="stylesheet" href="/public/css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Inicio</a> | 
+      <a href="/reservas">Ver Reservas</a> | 
+      <a href="/reservas/nueva">Crear Reserva</a>
+    </nav>
+  </header>
+  <main>
+    <%- body %>
+  </main>
+  <footer>
+    <p>ID Solicitud: <%= solicitudId %></p>
+  </footer>
+</body>
+</html>
